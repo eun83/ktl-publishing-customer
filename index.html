@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+
+	<title>KTL 한국산업기술시험원 고객전용홈페이지</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="resource/ktl.ico" />
+
+	<meta name="robots" content="index,follow">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<!--header-->
+	<script>
+		var isOldIe = false;
+	</script>
+	<!--[if lt IE 10]>
+<script>
+isOldIe = true;
+</script>
+<![endif]-->
+
+	<link href="cheditor/css/editareaView.css" rel="stylesheet" type="text/css" />
+	<link href="resource/templete_common/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href="resource/templete_common/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+	<link href="resource/templete_common/css/base.css" rel="stylesheet" type="text/css" />
+	<link href="resource/common/css/loading-spiner.css" rel="stylesheet" type="text/css" />
+	<link href="resource/common/jquery_plugin/validation/validator.css" rel="stylesheet" type="text/css" />
+
+	<link href="resource/common/css/sns1.css" rel="stylesheet" type="text/css" />
+	<!--//header-->
+
+	<!--네이버 애널리틱스 연동 : 20211013 새로발급ID
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "1012f224237cee0";
+if(window.wcs){
+wcs_do();
+}
+</script>-->
+	<script type="text/javascript">
+		var homeMainUrl = window.location.href;
+		if (navigator.userAgent.indexOf("Trident") > 0) {
+			if (confirm("현재 사용 중인 IE(인터넷 익스플로러) 브라우저는 향후 지원이 종료됩니다.\n" +
+				"원활한 사용을 원하시면 Microsoft Edge, Chrome 브라우저를 권장합니다.\n" +
+				"확인 버튼을 클릭하시면 Microsoft Edge 브라우저로 자동으로 이동됩니다.\n" +
+				"* Microsoft Edge 브라우저가 설치되어 있어야 이용 가능.")) {
+				window.location = "microsoft-edge:" + homeMainUrl;
+			}
+		} else if (/MSIE \d |Trident.*rv:/.test(navigator.userAgent)) {
+			if (confirm("현재 사용 중인 IE(인터넷 익스플로러) 브라우저는 향후 지원이 종료됩니다.\n" +
+				"원활한 사용을 원하시면 Microsoft Edge, Chrome 브라우저를 권장합니다.\n" +
+				"확인 버튼을 클릭하시면 Microsoft Edge 브라우저로 자동으로 이동됩니다.\n" +
+				"* Microsoft Edge 브라우저가 설치되어 있어야 이용 가능.")) {
+				window.location = "microsoft-edge:" + homeMainUrl;
+			}
+		}
+	</script>
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="canonical" href="https://customer.ktl.re.kr">
+
+	<meta name="robots" content="index,follow">
+	<meta name="Author" content="KTL 고객전용홈페이지">
+	<meta name="Keywords" content="한국산업기술시험원, KTL, KC인증, 시험인증, 국제공인 시험인증, K마크">
+	<meta name="Subject" content="한국산업기술시험원 고객전용 홈페이지">
+	<meta name="Title" content="한국산업기술시험원">
+	<meta name="Description" content="한국산업기술시험원, 온라인신청, 교정견적요청, 수수료안내, 접수진행현황 조회, 인증현황조회, 성적서/인증서">
+	<meta name="Publisher" content="한국산업기술시험원">
+	<meta name="Other Agent" content="한국산업기술시험원">
+	<meta name="Reply-To(Email)" content="">
+	<meta name="Distribution" content="한국산업기술시험원">
+	<meta name="Copyright" content="한국산업기술시험원">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="한국산업기술시험원">
+	<meta property="og:description" content="한국산업기술시험원, 온라인신청, 교정견적요청, 수수료안내, 접수진행현황 조회, 인증현황조회, 성적서/인증서">
+	<meta property="og:image" content="resource/templete/cms1/src/img/com/sub_logo.png">
+	<meta property="og:url" content="https://customer.ktl.re.kr">
+
+	<!-- ktl lib -->
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/lib/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/lib/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/lib/css/jquery.bxslider.min.css">
+	<script src="resource/templete/cms1/lib/js/jquery/jquery-1.11.0.min.js"></script>
+	<script src="resource/templete/cms1/lib/js/jquery/jquery.bxslider.min.js"></script>
+	<script src="resource/templete/cms1/lib/js/jquery/jquery-ui.js"></script>
+	<script src="resource/templete/cms1/lib/js/slick/slick.js"></script>
+	<script src="resource/common/jquery_plugin/common_functions.js"></script>
+	<!-- //ktl lib -->
+	<!-- ktl css -->
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/src/css/itg.css">
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/src/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/src/css/main.css">
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/src/css/sub.css">
+	<!-- renewal krl css -->
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/src/css/re_layout.css">
+	<link rel="stylesheet" type="text/css" href="resource/templete/cms1/src/css/re_main.css">
+	<!-- //ktl css -->
+	<!-- ktl script -->
+	<script src="resource/templete/cms1/src/js/common.js"></script>
+	<script src="resource/templete/cms1/src/js/gnb.js"></script>
+	<script src="resource/templete/cms1/src/js/main.js"></script>
+	<script src="resource/templete/cms1/src/js/sub.js"></script>
+	<!-- renewal krl script -->
+	<script src="resource/templete/cms1/src/js/re_common.js"></script>
+	<!-- //ktl script -->
+
+	<script src="resource/common/jquery_plugin/common_functions.js"></script>
+	<script src="resource/common/jquery_plugin/validation/validator.js"></script>
+	<script src="resource/common/jquery_plugin/validation/accessability.js"></script>
+	<script src="cheditor/cheditor.js"></script>
+	<script src="resource/common/jquery_plugin/popWin.js"></script>
+	<script src="resource/templete/cms1/src/js/common_dev.js"></script>
+
+	<!-- <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script> old ver-->
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> <!--new ver(20220209)-->
+	<!--[if lte IE 9]><script src="/resource/templete_common/js/html5shiv.js"></script><script src="/resource/templete_common/js/respond.min.js"></script><![endif]-->
+
+	<!-- 240701 new main -->
+	
+</head>
+
+<body class="renewal_main">
+	<!-- skip -->
+	<div id="skip" class="skip">
+		<a href="">본문 바로가기</a>
+		<a href="">주메뉴 바로가기</a>
+	</div>
+
+	<!-- main -->
+	<div class="re_main_wrap">
+		<!-- header -->
+		<div class="re_header">
+			<!-- header first line -->
+			<div class="re_top-menu">
+				<div class="wrap_inner">
+					<h1 class="top_logo">
+						<a href="" title="KTL 한국산업기술시험원 customer고객전용 메인이동">
+							<img src="resource/templete/cms1/src/img/ktl_logo.svg" alt="KTL 한국산업기술시험원 로고">					
+							<span>CUSTOMER 고객전용</span>
+						</a>
+					</h1>
+					<div class="re_top-menu_wrap">
+						<ul>
+							<li>
+								<a href="">KTL대표홈페이지</a>
+							</li>
+							<li>
+								<a href="">KTLAcademy</a>
+							</li>
+							<li>
+								<a href="">공연안전지원시스템</a>
+							</li>
+							<li>
+								<a href="">해외인증정보시스템</a>
+							</li>
+						</ul>
+						<div class="re_utils">
+							<a href=""><i class="icon_man"></i>Join</a>
+							<a href=""><i class="icon_lock"></i><span>Login</span></a>
+							<a href=""><i class="icon_globe"></i><span>English</span></a>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- header second line -->
+			<div class="re_gnb_wrap">
+				<div class="wrap_inner">
+					<ul class="re_gnb">
+						<li class="menu_01">
+							<a href="">사업소개</a>
+							<ul class="re_gnb_depth01">
+								<li>
+									<a href="">인증</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">국내인증</a></li>
+										<li><a href="">해외인증</a></li>
+										<li><a href="">인증심사</a></li>
+										<li><a href="">조달물품적합시험</a></li>
+										<li><a href="">조달물자 전문기관검사</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">시험</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">공기정화장치 시험</a></li>
+										<li><a href="">기계시험</a></li>
+										<li><a href="">교통분야</a></li>
+										<li><a href="">내진시험평가</a></li>
+										<li><a href="">무대시설시험</a></li>
+										<li><a href="">방폭기기시험</a></li>
+										<li><a href="">산업융합제품 시험</a></li>
+										<li><a href="">소음진동시험</a></li>
+										<li><a href="">소프트웨어시험</a></li>
+										<li><a href="">신뢰성시험</a></li>
+										<li><a href="">신재생에너지시험</a></li>
+										<li><a href="">에너지효율시험</a></li>
+										<li><a href="">원전기기시험</a></li>
+										<li><a href="">의료분야</a></li>
+										<li><a href="">이차전지시험</a></li>
+										<li><a href="">재료시험</a></li>
+										<li><a href="">전기전자시험</a></li>
+										<li><a href="">전기전자조명분야</a></li>
+										<li><a href="">사이버보안/정보보호 시험</a></li>
+										<li><a href="">정보통신시험</a></li>
+										<li><a href="">조선해양기자재시험</a></li>
+										<li><a href="">철도시험</a></li>
+										<li><a href="">항공우주시험</a></li>
+										<li><a href="">환경분야</a></li>
+										<li><a href="">IEC61850분야</a></li>
+										<li><a href="">탄소발자국 산정 시험</a></li>
+										<li><a href="">전력변환장치(PCS)/ 전기차충전기 시험</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">교정</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">교정</a></li>
+										<li><a href="">법정계량</a></li>
+										<li><a href="">국책과제 성과물 및 일반 성능평가</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">교육</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">전문기술교육</a></li>
+										<li><a href="">공연 및 공연장 종사자 안전교육</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">숙련도</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">숙련도시험</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">정부지원사업</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">연구장비 바우처활용 지원사업</a></li>
+										<li><a href="">신뢰성 지원사업</a></li>
+										<li><a href="">수출바우처(수출지원기반활용사업)</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">검증</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">국제통용 탄소발자국 검증</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">접수/수수료 안내</a>
+							<ul class="re_gnb_depth01">
+								<li>
+									<a href="">접수안내</a>
+								</li>
+								<li>
+									<a href="">KTL 전문 상담원 안내</a>
+								</li>
+								<li>
+									<a href="">신청서 양식 내려받기</a>
+								</li>
+								<li>
+									<a href="">수수료 안내</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">공공(법정)기술지원료</a></li>
+										<li><a href="">일반기술지원료</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">교정 견적 요청</a>
+								</li>
+								<li>
+									<a href="">온라인 입금 안내</a>
+								</li>
+								<li>
+									<a href="">기술지원 회원제</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">운영안내/회원가입신청</a></li>
+										<li><a href="">회비현황 및 접수진행 조회</a></li>
+										<li><a href="">회원제 정산내역</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">온라인신청</a>
+							<ul class="re_gnb_depth01">
+								<li>
+									<a href="">일반분야</a>
+								</li>
+								<li>
+									<a href="">교정분야</a>
+								</li>
+								<li>
+									<a href="">의료분야</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">시료확인서</a></li>
+										<li><a href="">전자의료기기</a></li>
+										<li><a href="">의료용품</a></li>
+										<li><a href="">의료기기 기술문서 심사</a></li>
+										<li><a href="">GMP 심사</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">계량기 형식승인 분야</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">전력량계</a></li>
+										<li><a href="">전기자동차 충전기</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">소프트웨어분야</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">GS 인증</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">환경분야</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">수질 정도검사</a></li>
+										<li><a href="">먹는물 정도검사</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">나의 접수현황</a>
+							<ul class="re_gnb_depth01">
+								<li>
+									<a href="">접수 진행현황</a>
+								</li>
+								<li>
+									<a href="">수수료 납부</a>
+								</li>
+								<li>
+									<a href="">계산서발행현황(영수)</a>
+								</li>
+								<li>
+									<a href="">성적서/인증서 발급</a>
+								</li>
+								<li>
+									<a href="">장비 반출예약</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">방문 반출예약 신청</a></li>
+										<li><a href="">택배 반출예약 신청</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">고형연료제품 시료채취예약</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">고객 서비스</a>
+							<ul class="re_gnb_depth01">
+								<li>
+									<a href="">공지사항</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">공지사항</a></li>
+										<li><a href="">설문조사</a></li>
+										<li><a href="">자료실</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">환불/시험취소</a>
+								</li>
+								<li>
+									<a href="">인증현황조회</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">K마크제품인증</a></li>
+										<li><a href="">시스템인증현황조회</a></li>
+										<li><a href="">안전인증현황조회</a></li>
+										<li><a href="">Certification Status</a></li>
+										<li><a href="">Project Status</a></li>
+										<li><a href="">승강기안전인증현황조회</a></li>
+										<li><a href="">중남미 인증서 발급현황</a></li>
+										<li><a href="">KCs방폭인증현황</a></li>
+										<li><a href="">중동 GCC 인증발행현황</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">간이측정기성능인증현황</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">미세먼지 분야</a></li>
+										<li><a href="">대기 분야</a></li>
+										<li><a href="">수질 분야</a></li>
+										<li><a href="">먹는물 분야</a></li>
+										<li><a href="">소음 분야</a></li>
+										<li><a href="">실내공기질 분야</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">인정서 현황</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">KOLAS 인정서</a></li>
+										<li><a href="">국립전파연구원 지정서</a></li>
+										<li><a href="">식품의약품안전처지정서</a></li>
+										<li><a href="">형식승인기관 지정</a></li>
+										<li><a href="">안전인증/확인기관 지정서</a></li>
+										<li><a href="">기타</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">성적서진위여부확인</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">성적서진위여부확인</a></li>
+										<li><a href="">위변조방지기술적용안내</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">온라인 상담(Q&amp;A)</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">온라인 상담(Q&amp;A)</a></li>
+										<li><a href="">FAQ</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">고객의 소리</a>
+									<ul class="re_gnb_depth02">
+										<li><a href="">칭찬의 소리</a></li>
+										<li><a href="">불편사항신고</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="re_gnb_btn">
+						<button type="button" class="btn_top_search_open"><i class="icon_search"></i><span class="hide">검색창 열기</span></button>
+						<button type="button" class="btn_all_menu_open"><i class="icon_menu"></i><span class="hide">메뉴 열기</span></button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="re_main">
+			
+
+		</div>
+
+
+	</div>
+</body>
+
+</html>

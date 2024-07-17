@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* font */
+@font-face {
+  font-family: 'NotoKR';
+  font-weight: 400;
+  src:url(font/NotoSansKR-Light.eot);
+  src:url(font/NotoSansKR-Lightd41d.eot?#iefix) format('embedded-opentype'),url(font/NotoSansKR-Light.woff) format('woff'),url(font/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'NotoKR';
+  font-weight: 500;
+  src:url(font/NotoSansKR-Regular.eot);
+  src:url(font/NotoSansKR-Regulard41d.eot?#iefix) format('embedded-opentype'),url(font/NotoSansKR-Regular.woff) format('woff'),url(font/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'NotoKR';
+  font-weight: 700;
+  src:url(font/NotoSansKR-Medium.eot);
+  src:url(font/NotoSansKR-Mediumd41d.eot?#iefix) format('embedded-opentype'),url(font/NotoSansKR-Medium.woff) format('woff'),url(font/NotoSansKR-Medium.otf) format('opentype');
+}
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+body,button,input,select,table,textarea{font-family:'NotoKR','Malgun Gothic',Arial,sans-serif;font-size:15px;font-weight:500;color:#595959;line-height:1.6;letter-spacing:-0.04em}
+html{height:100%}
+body{height:100%;-webkit-text-size-adjust:none}
+button,fieldset,img{border:0 none}
+fieldset,img{border:0}
+img,li{vertical-align:top}
+li,ol,ul{list-style:none}
+address,em{font-style:normal}
+a{color:inherit;text-decoration:none}
+a:active,a:focus,a:hover{text-decoration:none}
+button{border:0;background:0 0;cursor:pointer}
+table{margin:0;padding:0;border:0;border-spacing:0;border-collapse:collapse;}
+input,select,textarea,button{vertical-align:top}
+input,select,textarea{border:0;background:0;-webkit-border-radius:0;-moz-border-radius:0;-o-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none}
+select::-ms-expand{display:none}
+select {-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;}
+textarea{resize:none;box-shadow:none;-webkit-border-radius:0;-moz-border-radius:0;-o-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none}
+embed,iframe,img,object,video{max-width:100%}
+input[type=search]::-ms-clear,input[type=search]::-ms-reveal,input[type=text]::-ms-clear,input[type=text]::-ms-reveal{display:none;width:0;height:0}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search']{-webkit-appearance:none;border-radius:0;background-color:transparent}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file']{-webkit-appearance:button;border-radius:0}
+.ir-text,legend,.blind,.ui-datepicker table caption{overflow:hidden;position:absolute;border:0;width:1px;height:1px;clip:rect(1px,1px,1px,1px)}
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+
+@media screen and (max-width:1239px){
+  html{font-size:10px;font-size:0.625rem;}
+  body,button,input,select,table,textarea{font-size:1.6rem;letter-spacing:-0.05rem;}
+}
+
+@media screen and (max-width:767px) {
+  html{font-size:10px;font-size:0.625rem;-webkit-text-size-adjust: none;}
+  body,html{height:100%}
+  body,button,input,select,table,textarea{font-size:1.6rem}
+}
+
+.block-el {display:block;width:100%;clear:both;}
+.text-l {text-align: left;}
+.wd-100p {width: 100%;}
+.wd-100 {width:100px;}
+.mt-0 {margin-top:0px;}
+.mt-20 {margin-top:20px;}
+.mt-50 {margin-top:50px;}
+.mt-30 {margin-top:30px;}
+.mr-10 {margin-right:10px;}
+.ml-20 {margin-left: 20px;}
+.wd-877 {width:877px;}
+
+.check_wrap{position:relative;vertical-align: middle;}
+.check_wrap input[type="checkbox"]{width:15px;height:15px;margin:0;padding:0;}
+.check_wrap label.chk-box{display:inline-block;width:15px;height:15px;margin:0 0 0 -18px;border:1px solid #d3d3d3;background:#fff;vertical-align:middle;cursor:pointer;z-index:10;}
+.check_wrap label.chk-box.on,
+.check_wrap input[type="checkbox"]:checked + label.chk-box{background-image:url(../img/sub/input-check.png);background-repeat:no-repeat;background-position:50% 60%;}
+
+.check_box_wrap{position:relative;margin-right:20px;vertical-align: middle;}
+.check_box_wrap input[type="checkbox"]{overflow:hidden;position:absolute;top:3px;left:0;width:16px;height:16px;margin:0;padding:0;border:0 none;opacity: 0;}
+.check_box_wrap label.chk-box{display:inline-block;padding-left:22px;}
+.check_box_wrap label.chk-box:before{display:inline-block;position:absolute;top:4px;left:0;width:15px;height:15px;margin:0;border:1px solid #d3d3d3;background:#fff;vertical-align:middle;cursor:pointer;z-index:10;content:'';}
+.check_box_wrap label.chk-box.on:before,
+.check_box_wrap input[type="checkbox"]:checked + label.chk-box:before{background-image:url(../img/sub/input-check.png);background-repeat:no-repeat;background-position:50% 60%;}
+
+.radio_wrap{position:relative;display:inline-block;margin-right:20px;vertical-align: middle; padding-left:0 !important}
+.radio_wrap input[type="radio"]{overflow:hidden;width:10px;height:10px;margin:0 7px 0 0;padding:0;vertical-align: middle;}
+.radio_wrap label.inp_rdo:before{position:absolute;top:5px;left:-1px;display:inline-block;width:16px;height:15px;margin:0 10px 0 0;border:1px solid #A6A6A6;border-radius:15px;background:#fff;vertical-align:middle;cursor:pointer;z-index:10;content:'';}
+.radio_wrap label.inp_rdo.on:before,
+.radio_wrap input[type="radio"]:checked + label.inp_rdo:before{background-image:url(../img/sub/input-radio.png);background-repeat:no-repeat;background-position:50% 45%;}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent; }
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent; }
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; }
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
+
+.table.medical-table.medical-table2.type2 > tbody > tr > td  .radio_wrap label.inp_rdo.on:before, .radio_wrap input[type="radio"]:checked + label.inp_rdo:before {
+    background-position: 50% 40%;
+}
+
+
+

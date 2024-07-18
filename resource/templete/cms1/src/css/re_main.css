@@ -1,5 +1,30 @@
 @charset "utf-8";
 
+/* font */
+/* relaxia - 400 one size */
+@font-face {
+  font-weight:400;
+  font-family:"relaxia";
+  font-style:normal;
+  font-display:auto;
+  font-stretch:normal;
+  src:url(../font/relaxiaR.woff2) format("woff2"),
+      url(../font/relaxiaR.woff) format("woff"),
+      url(../font/relaxiaR.otf) format("opentype");    
+  }
+
+.re_search_wrap legend {
+  visibility: visible;
+  overflow: auto;
+  position: static;
+  width: auto;
+  height: auto;
+  clip: auto;
+  line-height: initial;
+  font-size: 1rem;
+}
+
+
 .renewal_main {
   position: relative;
   width: 100%;
@@ -7,4 +32,20 @@
 
 .re_main_wrap {
   width: 100%;
+  /* max-width: 1920px;
+  margin: 0 auto; */
+}
+
+/* visual */
+.re_main .visual {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Layer 2' viewBox='0 0 1919.76 216.99'%3E%3Cg data-name='Layer 1'%3E%3Cpath d='M0 0h1450.96c59.88 0 108.49 48.61 108.49 108.49 0 59.88-48.61 108.49-108.49 108.49H0V0Z' style='stroke-width:0;fill:%23eaf1f7'/%3E%3Cpath d='M1193.89 0h617.38c59.88 0 108.49 48.61 108.49 108.49 0 59.88-48.61 108.49-108.49 108.49h-617.38V0Z' style='fill:%23c4d8e8;opacity:.4;stroke-width:0' transform='rotate(180 1556.825 108.495)'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center bottom;
+}
+.re_main .visual .visual_top {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.re_main .visual .visual_top .visual_title {
+  font: bold  30px "relaxia";
 }

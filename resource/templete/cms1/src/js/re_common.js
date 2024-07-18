@@ -2,12 +2,12 @@ $(document).ready(function () {
     
     // web
     $('.re_gnb_wrap > .wrap_inner > .re_gnb').on('mouseover click', function() {
-        $('.re_header').addClass('on');
+        $('.re_gnb_wrap').addClass('on');
 
         // return false;
     });
     $('.re_gnb_wrap > .wrap_inner > .re_gnb').mouseleave(function(){
-        $('.re_header').removeClass('on');
+        $('.re_gnb_wrap').removeClass('on');
     });
 
 

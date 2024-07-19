@@ -20,7 +20,7 @@
   width: 100%;
 }
 .re_header .wrap_inner {
-  width: 1440px;
+  width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -30,9 +30,6 @@
   width: 100%;
   padding: 30px 20px 20px;
   border-bottom: 1px solid #e2e2e2;
-}
-.re_header .top_logo {
-  margin-left: 20px;
 }
 .re_header .top_logo img {
   width: 231px;
@@ -53,7 +50,6 @@
 .re_header .re_top-menu_wrap {
   display: flex;
   align-items: center;
-  margin-right: 20px;
 }
 .re_header .re_top-menu_wrap ul {
   display: flex;
@@ -116,7 +112,7 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  z-index: -1;
+  z-index: 100;
   top: 100%;
   right: 0;
   left: 0;
@@ -153,7 +149,7 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  z-index: -1;
+  z-index: 101;
   top: -1px;
   right: 0;
   left: 0;
@@ -186,7 +182,7 @@
 .re_header .re_gnb .re_gnb_depth01 {
   width: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 102;
   top: 100%;
   left: 0;
 }
@@ -198,6 +194,8 @@
   gap: 10px;
   padding: 25px 0 50px;
   word-break: keep-all;
+  position: relative;
+  z-index: 103;
 }
 .re_header .re_gnb .re_gnb_depth01 > ul > li > a {
   display: block;
@@ -295,7 +293,6 @@
 /* gnb_button */
 .re_header .re_gnb_btn {
   display: flex;
-  margin-right: 20px;
 }
 .re_header .re_gnb_btn button {
   overflow: hidden;

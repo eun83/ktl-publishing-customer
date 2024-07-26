@@ -2,7 +2,8 @@
 
 /* font */
 /* relaxia - 400 one size */
-/* Pretendard - 400, 500, 600, 700 */
+/* GyeonggiTitleM - normal one size */
+
 @font-face {
   font-weight:400;
   font-family:"relaxia";
@@ -14,39 +15,13 @@
       url(font/relaxiaR.otf) format("opentype");    
   }
 @font-face {
-  font-weight: 400;
-  font-family: 'Pretendard';
-  font-style: normal;
-  src: url(font/Pretendard-Regular.woff) format('woff'),
-      url(font/Pretendard-Regular.woff2) format('woff2');
-}
-@font-face {
-  font-weight: 500;
-  font-family: 'Pretendard';
-  font-style: normal;
-  src: url(font/Pretendard-Medium.woff) format('woff'),
-      url(font/Pretendard-Medium.woff2) format('woff2');
-}
-@font-face {
-  font-weight: 600;
-  font-family: 'Pretendard';
-  font-style: normal;
-  src: url(font/Pretendard-SemiBold.woff) format('woff'),
-      url(font/Pretendard-SemiBold.woff2) format('woff2');
-}
-@font-face {
-  font-weight: 700;
-  font-family: 'Pretendard';
-  font-style: normal;
-  src: url(font/Pretendard-Bold.woff) format('woff'),
-      url(font/Pretendard-Bold.woff2) format('woff2');
-}
-@font-face {
   font-family: 'GyeonggiTitleM';
   font-weight: normal;
   font-style: normal;
   src: url(font/GyeonggiTitleM.woff) format('woff');
 }
+
+
 
 .re_search_wrap legend {
   visibility: visible;

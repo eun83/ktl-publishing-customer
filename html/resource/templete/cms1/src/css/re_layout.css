@@ -469,6 +469,7 @@
   text-align: left;
   background-color: #e2e2e2;
   padding: 0 10px;
+  font-family: 'Pretendard';
   font-size: 14px;
   color: #3e3e3e;
 }
@@ -485,6 +486,12 @@
   background-repeat: no-repeat;
   transform: rotate(180deg); 
   -webkit-transform: rotate(180deg);
+  transition: .25s;
+}
+.re_footer .site_links .on button::after {
+  margin-top: -3px;
+  transform: rotate(0deg); 
+  -webkit-transform: rotate(0deg);
 }
 .re_footer .site_links ul {
   display: none;
@@ -497,11 +504,18 @@
 }
 
 .re_footer .site_links ul li {
+  border-top: 1px solid #ccc;
+}
+.re_footer .site_links ul li:hover {
+  background-color: #eee;
+}
+.re_footer .site_links ul li:first-child {
+  border-top: 0;
 }
 .re_footer .site_links ul a {
   display: block;
   height: 27px;
   line-height: 27px;
   padding: 0 10px;
-  font-weight: 600;
+  font-weight: 500;
 }

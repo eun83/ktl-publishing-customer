@@ -455,6 +455,29 @@ wcs_do();
 					</div>
 				</div>
 			</div>
+			<!-- header search -->
+			<div class="total_search">
+				<div class="search_inner">
+					<form name="totSearch" method="get" action="/web/contents/webSearch.do">
+						<fieldset>
+							<input type="hidden" name="ptSignature" value="GM61DURJD7gG3uyqDkUoECtdJVtbZAdqOR1jGDoJamhGvtB4qn8SVRU9y3BC/sFLvgRqmcrN3ffUyxDMOo5o0nEDeoKd29/pFZ5l0bf/TuA=" />
+							<input type="hidden" name="siteCode" value="web">
+							<input type="hidden" name="searchCnd" value="onlyMe">
+							<!-- 입력 폼 영역 -->
+							<div class="re_search_wrap">
+								<legend>Serach</legend>
+								<div class="search_input">
+									<input type="search" id="sschStr" name="query" aria-label="검색어 입력" placeholder="검색어를 입력해주세요.">
+									<label for="sschStr" class="hide">검색어를 입력해주세요.</label>
+								</div>
+								<button class="delete_term"><span class="hide">검색어삭제</span></button>
+								<button type="submit" class="search_btn"><span class="hide">검색하기</span></button>
+							</div>
+						</fieldset>
+						<!-- //입력 폼 영역 -->
+					</form>
+				</div>
+			</div>
 
 		</header>
 
@@ -467,7 +490,7 @@ wcs_do();
 							<p class="visual_title"><span>MOVE</span>BEYOND KOREA NO.1<i>+</i></p>
 							<p>K-이노베이션 기술지원을 통한 디지털전환·탄소중립 글로벌 그린 강국 도약</p>
 						</div>					
-						<div class="visual_search">
+						<div class="total_search">
 							<form name="totSearch" method="get" action="/web/contents/webSearch.do">
 								<fieldset>
 									<input type="hidden" name="ptSignature" value="GM61DURJD7gG3uyqDkUoECtdJVtbZAdqOR1jGDoJamhGvtB4qn8SVRU9y3BC/sFLvgRqmcrN3ffUyxDMOo5o0nEDeoKd29/pFZ5l0bf/TuA=" />
@@ -672,14 +695,27 @@ wcs_do();
 								<button class="stop"><span class="hide">pause</span></button>                      
 								<button class="next "><span class="hide">다음</span></button>
 							</div>
-							<div class="slider_warp">
+							<div id="slider-banner" class="slider_warp">
 								<div class="banner_contnet banner01">
-									<p>
-										<strong>시험진행현황</strong>
-										이제 모바일로 확인하세요.
-									</p>
 									<div>
-										<a href="">자세히보기</a>
+										<p>
+											<strong>시험진행현황</strong>
+											이제 모바일로 확인하세요.
+										</p>
+										<div>
+											<a href="">자세히보기</a>
+										</div>
+									</div>
+								</div>
+								<div class="banner_contnet banner02">
+									<div>
+										<p>
+											<strong>시험진행현황</strong>
+											이제 모바일로 확인하세요.
+										</p>
+										<div>
+											<a href="">자세히보기</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -761,7 +797,7 @@ wcs_do();
 
 			<section class="content_line05">
 				<div class="content_inner">
-					<div class="partners_slider">
+					<div id="slider-partners" class="partners_slider">
 						<div>
 							<a href=""><img src="resource/templete/cms1/src/img/re_main/partners01.png" alt="eco 마일리지 바로가기"></a>
 						</div>

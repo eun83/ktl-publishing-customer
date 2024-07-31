@@ -86,11 +86,22 @@
   color: #fa9614;
 }
     /* search */
+.re_main .total_search .re_search_wrap {
+  margin: 0;
+  margin-right: 77px;
+}
 .re_main .total_search .re_search_wrap legend {
+  display: inline-block;
   font-size: 16px;
   color: #133b9c;
   letter-spacing: .5px;
   padding: 15px 20px;
+}
+.re_main .visual_top .total_search .re_search_wrap .search_input input {
+  width: 370px;
+}
+.re_main .total_search .re_search_wrap .delete_term {
+  position: relative;
 }
 
   /* visual :: slider */

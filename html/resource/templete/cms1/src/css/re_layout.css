@@ -369,21 +369,29 @@
 .re_main_wrap .total_search .search_inner {
   position: absolute;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px;
   background-color: #fff;
   z-index: 1;
+  text-align: center;
 }
 .re_main_wrap .total_search .re_search_wrap {
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
   position: relative;
-  margin-right: 77px;
   border-bottom: 4px solid #133b9c;
 }
+.re_main_wrap .total_search .re_search_wrap legend {
+  display: none;
+}
+.re_main_wrap .total_search .re_search_wrap .search_input {
+  flex: 1 1 0;
+}
 .re_main_wrap .total_search .re_search_wrap .search_input input {
-  width: 370px;
+  width: 100%;
   height: 45px;
   line-height: 45px;
-  margin-top: 5px;
+  margin: 5px 0 8px;
   background-color: #f6f6f6;
   text-indent: 15px;
 }
@@ -391,15 +399,14 @@
   font-size: 18px;
   font-weight: 100;
 }
-.re_main_wrap .total_search .re_search_wrap .delete_term {
-  position: relative;
+.re_main_wrap .total_search .re_search_wrap .x_btn {
   width: 28px;
   height: 28px;
   margin: 15px 0 15px 15px;
   background-color: #f6f6f6;
   border-radius: 50%;
 }
-.re_main_wrap .total_search .re_search_wrap .delete_term::before {
+.re_main_wrap .total_search .re_search_wrap .x_btn::before {
   content: '';
   position: absolute;
   width: 13px;
@@ -409,7 +416,7 @@
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);  
 }
-.re_main_wrap .total_search .re_search_wrap .delete_term::after {
+.re_main_wrap .total_search .re_search_wrap .x_btn::after {
   content: '';
   position: absolute;
   width: 13px;
@@ -419,6 +426,18 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+  .re_main_wrap .total_search .re_search_wrap .close_btn {
+    position: absolute;
+    top: -35px;
+    right: -120px;
+    background-color: #d6d6d6;
+  }
+  .re_main_wrap .total_search .re_search_wrap .close_btn::before {
+    background-color: #fff;
+  }
+  .re_main_wrap .total_search .re_search_wrap .close_btn::after {
+    background-color: #fff;
+  }
 .re_main_wrap .total_search .re_search_wrap .search_btn {
   position: absolute;
   right: -77px; /* .re_search_wrap 마진값이랑 같음 */

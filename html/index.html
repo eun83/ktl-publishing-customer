@@ -455,6 +455,7 @@ wcs_do();
 					</div>
 				</div>
 			</div>
+			
 			<!-- header search -->
 			<div class="total_search">
 				<div class="search_inner">
@@ -465,13 +466,15 @@ wcs_do();
 							<input type="hidden" name="searchCnd" value="onlyMe">
 							<!-- 입력 폼 영역 -->
 							<div class="re_search_wrap">
-								<legend>Serach</legend>
-								<div class="search_input">
-									<input type="search" id="sschStr" name="query" aria-label="검색어 입력" placeholder="검색어를 입력해주세요.">
-									<label for="sschStr" class="hide">검색어를 입력해주세요.</label>
+								<div>
+									<legend>Serach</legend>
+									<div class="search_input">
+										<input type="search" id="sschStr" name="query" aria-label="검색어 입력" placeholder="검색어를 입력해주세요.">
+										<label for="sschStr" class="hide">검색어를 입력해주세요.</label>
+									</div>
 								</div>
 								<button type="submit" class="search_btn"><span class="hide">검색하기</span></button>
-								<button class="x_btn close_btn"><span class="hide">검색닫기</span></button>
+								<button type="button" id="top-close-btn" class="x_btn close_btn"><span class="hide">검색닫기</span></button>
 							</div>
 						</fieldset>
 						<!-- //입력 폼 영역 -->
@@ -479,6 +482,10 @@ wcs_do();
 				</div>
 			</div>
 
+			<!-- all menu -->
+			<div>
+
+			</div>
 		</header>
 
 		<!-- main contents -->
@@ -498,12 +505,14 @@ wcs_do();
 									<input type="hidden" name="searchCnd" value="onlyMe">
 									<!-- 입력 폼 영역 -->
 									<div class="re_search_wrap">
-										<legend>Serach</legend>
-										<div class="search_input">
-											<input type="search" id="sschStr" name="query" aria-label="검색어 입력" placeholder="검색어를 입력해주세요.">
-											<label for="sschStr" class="hide">검색어를 입력해주세요.</label>
+										<div>
+											<legend>Serach</legend>
+											<div class="search_input">
+												<input type="search" id="sschStr" name="query" aria-label="검색어 입력" placeholder="검색어를 입력해주세요.">
+												<label for="sschStr" class="hide">검색어를 입력해주세요.</label>
+											</div>
+											<button class="x_btn delete_term"><span class="hide">검색어삭제</span></button>
 										</div>
-										<button class="x_btn delete_term"><span class="hide">검색어삭제</span></button>
 										<button type="submit" class="search_btn"><span class="hide">검색하기</span></button>
 									</div>
 								</fieldset>

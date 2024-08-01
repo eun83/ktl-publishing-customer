@@ -27,6 +27,13 @@ $(document).ready(function () {
         });
     });
 
-    
+    // search test 
+    $('.btn_top_search_open').on('click', function() {
+        $('.total_search').addClass('on');
+    });
+
+    $('#top-close-btn').mouseleave(function() { //클릭으로 하니 자꾸 에러페이지 뜸
+        $('.total_search').removeClass('on');
+    });
 
 });

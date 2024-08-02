@@ -467,10 +467,13 @@
 .allmenu_wrap .re_gnb .re_gnb_depth03 {
   padding: 5px 0;
 }
+.allmenu_wrap .re_gnb .re_gnb_depth03 > li a {
+  transition: .25s;
+}
 .allmenu_wrap .re_gnb .re_gnb_depth03 > li a::before {
   background-color: #7e888f;
 }
-/* .on 설정 */
+/* .on 설정 + hover */
 .allmenu_wrap .re_gnb > li.on > a {
   background-color: #133b9b;
   color: #fff;

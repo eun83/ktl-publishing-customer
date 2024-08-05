@@ -452,6 +452,7 @@ wcs_do();
 					<div class="re_gnb_btn">
 						<button type="button" class="btn_top_search_open"><span class="hide">검색창 열기</span></button>
 						<button type="button" class="btn_allmenu_open"><span class="hide">메뉴 열기</span></button>
+						<button type="button" class="btn_allmenu_close" style="display: none;"><span class="hide">메뉴 닫기</span></button>
 					</div>
 				</div>
 			</div>
@@ -483,7 +484,7 @@ wcs_do();
 			</div>
 
 			<!-- all menu -->
-			<div class="re_allmenu">
+			<div class="re_allmenu ">
 				<div class="allmenu_wrap">
 					<div class="allmenu_title">
 						<p>전체메뉴</p>
@@ -1065,8 +1066,8 @@ wcs_do();
 					</div>
 
 					<div class="visual_slider_wrap">
-						<div class="visual_slider">
-							<div class="visual_content slider_01 on">
+						<div id="slider_visual" class="visual_slider">
+							<div class="visual_content slider_01">
 								<div>
 									<span class="number">01</span>
 									<h3>나의 시험 현황 조회</h3>

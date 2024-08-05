@@ -35,5 +35,13 @@ $(document).ready(function () {
     $('#top-close-btn').mouseleave(function() { //클릭으로 하니 자꾸 에러페이지 뜸
         $('.total_search').removeClass('on');
     });
+    // 전체메뉴 테스트
+    $('.btn_allmenu_open').on('click', function() {
+        $('.re_header > .re_allmenu').addClass('on');
+    });
+
+    $('.btn_allmenu_open').mouseleave(function() { //클릭으로 하니 자꾸 에러페이지 뜸
+        $('.re_header > .re_allmenu').removeClass('on');
+    });
 
 });

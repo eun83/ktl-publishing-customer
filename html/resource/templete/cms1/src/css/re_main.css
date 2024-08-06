@@ -449,11 +449,11 @@
 }
 .re_main .link_service {
   display: flex;  
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-flow: row wrap;
 }
 .re_main .link_service li {
-  flex: 1 1 0;
+  flex: 1 1 143px;
   font-weight: 600;
   font-size: 15px;
   color: #1f1f1f;
@@ -784,6 +784,13 @@
 
 }
 
+@media screen and (max-width: 1330px) {
+  /* content */
+  .re_main .link_service {
+    gap: 20px 100px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   
   /* visual slider */
@@ -814,10 +821,15 @@
   }
 
   /* content */
-  .re_main .link_service {
-    gap: 20px;
-  }
+  
 
+}
+
+@media screen and (max-width: 1155px) {
+  /* content */
+  .re_main .link_service {
+    gap: 20px 60px;
+  }
 }
 
 
@@ -825,6 +837,20 @@
   /* visual search */
   .re_main .total_search {
     display: none;  
+  }
+}
+
+@media screen and (max-width: 995px) {
+  /* content */
+  .re_main .link_service {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  /* content */
+  .re_main .link_service {
+    gap: 20px 0;
   }
 }
 
@@ -836,6 +862,18 @@
   }
   .visual .visual_issue .issue_list li p {
     padding: 0 30px;
+  }
+
+  /* content */
+  .re_main .link_service {
+    gap: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  /* content */
+  .re_main .link_service {
+    gap: 20px 0;
   }
 }
 
@@ -881,6 +919,6 @@
     padding: 30px 20px 20px;
   }
   .re_main .link_service {
-    gap: 10px;
+    gap: 10px 0;
   }
 }

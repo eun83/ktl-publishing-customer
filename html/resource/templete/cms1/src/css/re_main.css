@@ -57,6 +57,7 @@
   font-weight: 600;
   font-size: 15px;
   color: #332c61;
+  word-break: keep-all;
 }
 .re_main .visual .visual_top .visual_title {
   position: relative;
@@ -125,7 +126,7 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   padding: 50px 45px;
   border-radius: 20px;
   font-weight: 400;
@@ -149,17 +150,21 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 30px;
+  line-height: 1.1;
+  word-break: keep-all;
 }
 .re_main .visual .visual_content > div p {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  word-break: keep-all;
 }
 .re_main .visual .visual_content > div p span {
   display: block;
 }
 .re_main .visual .visual_content > div ul {
   display: flex;
+  align-items: stretch;
   visibility: hidden;
   margin-top: 30px;
   transition: all .1s cubic-bezier(.59, .01, .43, 1);
@@ -168,17 +173,23 @@
 }
 .re_main .visual .visual_content > div ul li {
   position: relative;
+  display: inline-flex;
+  align-items: center;
   flex: 1 1 33.3%;
-  max-width: 33.3%;
+  max-width: 200px;
   background-color: #fff;
   line-height: 35px;
   color: #3e4177;
   transition: all .3s ease-in-out;
 }
 .re_main .visual .visual_content > div ul li a {
-  padding: 10px 15px;
+  display: inline-block;
+  padding: 10px 35px 10px 15px;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1;
+  word-break: keep-all;
+  vertical-align: middle;
 }
 .re_main .visual .visual_content > div ul li a::after {
   content: '';
@@ -360,14 +371,13 @@
   vertical-align: middle;
 }
 .visual .visual_issue h3 {
-  margin-right: 45px;
   font-weight: 600;
   font-size: 22px;
   font-family: 'Pretendard';
   color: #000;
 }
 .visual .visual_issue .issue_list {
-  width: calc(100% - 230px);
+  width: calc(100% - 181px);
 }
 .visual .visual_issue .issue_list li {
   display: flex;
@@ -375,6 +385,12 @@
   font-weight: 600;
   font-size: 15px;
   color: #393939;
+}
+.visual .visual_issue .issue_list li p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 45px;
 }
 .visual .visual_issue .issue_controller {
   display: flex;
@@ -432,11 +448,12 @@
   width: 100%;
 }
 .re_main .link_service {
-  display: flex;
-  flex: 1 1 0;
+  display: flex;  
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .re_main .link_service li {
+  flex: 1 1 0;
   font-weight: 600;
   font-size: 15px;
   color: #1f1f1f;
@@ -449,6 +466,7 @@
 .re_main .link_service li a span::before {
   content: '';
   display: block;
+  position: relative;
   width: 105px;
   height: 105px;
   margin: 0 auto;
@@ -460,13 +478,13 @@
   content: '';
   display: block;
   position: absolute;
-  top: 50%;
+  top: 25px;
   left: 50%;
   width: 52px;
   height: 52px;
   border-radius: 50%;
   background-color: #fff;
-  transform: translate(-50%, calc(-50% - 21px));
+  transform: translateX(-50%);
 }
   /* content_line02 :: notice & banner */
 .re_main .content_line02 {
@@ -756,6 +774,15 @@
 
 /* ---------- respond ---------- */
 
+@media screen and (max-width: 1480px) {
+  .re_main .content_inner {
+    width: 100%;
+    max-width: initial;
+    margin: 0;
+    padding: 65px 20px 20px;
+  }
+
+}
 
 @media screen and (max-width: 1280px) {
   
@@ -786,6 +813,11 @@
     margin-top: 65px;
   }
 
+  /* content */
+  .re_main .link_service {
+    gap: 20px;
+  }
+
 }
 
 
@@ -793,5 +825,62 @@
   /* visual search */
   .re_main .total_search {
     display: none;  
+  }
+}
+
+
+@media screen and (max-width: 768px) {  
+  /* visual issue */
+  .visual .visual_issue {
+    padding: 0 20px 30px;
+  }
+  .visual .visual_issue .issue_list li p {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .re_main .visual .visual_top {
+    padding: 30px;
+  }
+  
+  .re_main .visual .visual_content > div ul {
+    flex-wrap: wrap;
+  }
+  .re_main .visual .visual_content > div ul li {
+    flex: 1 1 200px;
+  }
+
+  .re_main .visual .visual_content > div ul li a::after {
+    right: 12px;
+  }
+
+  .visual .visual_issue h3 {
+    font-size: 16px;
+  }
+  .visual .visual_issue h3::before {
+    width: 22px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  .visual .visual_issue .issue_controller {
+    margin-left: 0;
+  }
+  .visual .visual_issue .issue_list {
+    width: calc(100% - 127px);
+  }
+  .visual .visual_issue .issue_list li p {
+    padding: 0 15px;
+  }
+  .visual .visual_issue .issue_list li span {
+    display: none;
+  }
+
+  /* content */
+  .re_main .content_inner {
+    padding: 30px 20px 20px;
+  }
+  .re_main .link_service {
+    gap: 10px;
   }
 }

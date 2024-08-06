@@ -47,7 +47,7 @@ $(document).ready(function () {
                 breakpoint: 768,        // 화면 사이즈
                 settings: {
                     slidesToShow: 1,        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                    
+                    variableWidth: false,
                 }
             }
         ]

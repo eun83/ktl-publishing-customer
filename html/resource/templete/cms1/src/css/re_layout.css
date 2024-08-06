@@ -870,7 +870,7 @@
 @media screen and (max-width: 1280px) {
   /* top header */
   .re_main {
-    margin-top: 123px;
+    margin-top: 126px;
   }
   .re_header .re_top-menu {
     position: relative;
@@ -954,12 +954,15 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 768px) {  
+
 }
 
 @media screen and (max-width: 480px) {
   /* top header */
+  .re_main {
+    margin-top: 119px;
+  }
   .re_header .top_logo {
     padding: 8px 10px 15px;
   }

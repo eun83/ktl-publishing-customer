@@ -630,11 +630,12 @@
   gap: 35px;
 }
 .re_main .re_main_contents li {
-  flex: 1 1 calc((100% - 140px) / 5);
   text-align: center;
+  word-wrap: break-word;
 }
 .re_main .re_main_contents li a {
   display: block;
+  width: 230px;
   padding: 40px 0 35px;
   border-radius: 25px;  
   background-color: #fff;
@@ -667,10 +668,12 @@
 }
 .re_main .link_customer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 .re_main .link_customer li {
-  width: 25%;
+  width: calc((100% - 60px) / 4);
 }
 .re_main .link_customer li a::before {
   content: '';
@@ -781,7 +784,6 @@
     margin: 0;
     padding: 65px 20px 20px;
   }
-
 }
 
 @media screen and (max-width: 1330px) {
@@ -821,8 +823,19 @@
   }
 
   /* content */
-  
+  .re_main .link_customer li a {
+    padding: 8px 0 8px 100px;
+  }
 
+}
+
+@media screen and (max-width: 1240px) {
+  .re_main .link_customer li {
+    width: calc((100% - 20px) / 2);
+  }
+  .re_main .link_customer li a {
+    padding: 8px 0 8px 120px;
+  }
 }
 
 @media screen and (max-width: 1155px) {
@@ -838,7 +851,20 @@
   .re_main .total_search {
     display: none;  
   }
+
+  /* content */
+  .re_main .content_line02 .content_inner {
+    display: block;
+  }
+  .re_main .notice {
+    width: 100%;
+  }
+  .re_main .banner {
+    width: 100%;
+    margin-top: 65px;
+  }
 }
+
 
 @media screen and (max-width: 995px) {
   /* content */
@@ -846,7 +872,6 @@
     gap: 20px;
   }
 }
-
 @media screen and (max-width: 835px) {
   /* content */
   .re_main .link_service {
@@ -867,6 +892,23 @@
   /* content */
   .re_main .link_service {
     gap: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  /* content */
+  .re_main .link_customer li a {
+    padding: 8px 0 8px 100px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  /* content */
+  .re_main .link_customer li {
+    width: 300px;
+  }
+  .re_main .link_customer li a {
+    padding: 8px 0 8px 120px;
   }
 }
 
@@ -921,4 +963,25 @@
   .re_main .link_service {
     gap: 10px 0;
   }
+  .re_main .link_service li {
+    flex-basis: 140px;
+  }
+
+  .re_main .banner .banner_contnet > div {
+    padding: 55px 45px;
+    height: auto;
+  }
+  .re_main .banner .banner_contnet p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .re_main .banner .banner_contnet strong {
+    font-size: 25px;
+  }
+  .re_main .banner .banner_contnet a {
+    margin-top: 50px;
+    padding: 10px 30px;
+  }
+
+  
 }

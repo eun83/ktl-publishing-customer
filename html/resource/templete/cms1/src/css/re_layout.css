@@ -690,19 +690,29 @@
   margin: 0 auto;
 }
 .re_footer .ft_first_line,
-.re_footer .ft_second_line {
+.re_footer .ft_second_line,
+.re_footer .ft_third_line {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   font-family: 'Pretendard';
 }
+.re_footer .ft_second_line {
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.re_footer .ft_third_line {
+  display: block;
+  margin-top: 20px;
+}
 /* first line */
 .re_footer .ft_links {
   display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 265px);
   color: #c1c1c1;
-  gap: 20px;
+  gap: 8px 20px;
 }
 .re_footer .ft_links .underline a{
   padding: 2px 0;
@@ -729,50 +739,20 @@
   border-radius: 50%;
   background-color: #3e3e3e;
 }
-  /* sns */
-.re_footer .ft_sns {
-  display: flex;
-  color: #fff;
-}
-.re_footer .ft_sns .facebook,
-.re_footer .ft_sns .blog {
-  display: block;
-  width: 23px;
-  height: 23px;
-  margin-left: 5px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
-.re_footer .ft_sns .facebook {
-  margin-left: 20px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.51 23.51'%3E%3Cpath d='M23.51 11.76c0 6.49-5.26 11.76-11.76 11.76S0 18.25 0 11.76 5.26 0 11.76 0s11.76 5.26 11.76 11.76Z' style='fill:%233b5a9a'/%3E%3Cpath d='M14.33 5.21v2.38h-1.3c-.39 0-.63.11-.75.32-.09.14-.12.39-.12.72v1.09h2.21l-.26 2.4h-1.94v6.92H9.31v-6.92h-1.4v-2.4h1.4V8.28c0-1.47.51-2.42 1.51-2.82.49-.19.91-.25 1.35-.25h2.17Z' style='fill:%23f7f8f8'/%3E%3C/svg%3E");
-}
-.re_footer .ft_sns .blog {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.51 23.51'%3E%3Cpath d='M23.51 11.76c0 6.49-5.26 11.76-11.76 11.76S0 18.25 0 11.76 5.26 0 11.76 0s11.76 5.26 11.76 11.76Z' style='fill:%2342b649'/%3E%3Cpath d='M7.39 5.46h4.66c.84 0 1.55.13 2.13.38.58.25 1.02.61 1.31 1.06s.44.98.43 1.57c0 .66-.19 1.21-.57 1.65-.39.43-.9.72-1.53.86v.11c.45.02.87.15 1.26.39.39.24.71.57.95.99.24.42.36.91.36 1.47 0 .63-.16 1.19-.47 1.67-.31.48-.77.87-1.38 1.14-.61.28-1.34.42-2.19.42H7.39V5.46Zm4.3 4.9c.34 0 .65-.05.92-.18a1.419 1.419 0 0 0 .86-1.33c0-.43-.15-.78-.45-1.03-.31-.26-.73-.39-1.28-.39H9.82v2.93h1.88Zm.18 4.8c.68 0 1.18-.12 1.52-.38.33-.26.5-.62.49-1.08 0-.33-.08-.62-.23-.87s-.38-.45-.67-.59c-.29-.14-.64-.21-1.03-.21H9.83v3.14h2.05Z' style='fill:%23fff'/%3E%3C/svg%3E");
-}
-
-/* second line */
-.re_footer .address {
-  display: flex;
-}
-.re_footer .address img {
+.re_footer .ft_logo img {
   width: 235px;
   height: 40px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(212deg) brightness(150%) contrast(150%);
 }
-.re_footer .address > div {
-  margin-left: 30px;
-  color: #b3b3b3;
+/* second line */
+.re_footer .site_links,
+.re_footer .ft_sns {
+  align-items: center;
 }
-.re_footer .address > div p span {
-  margin: 0 12px;
-  color: #fff;
-}
-.re_footer .address > div p span:first-child {
-  margin-left: 0;
-}
+  /* site link */
 .re_footer .site_links {
   display: flex;
+  margin-right: 25px;
 }
 .re_footer .site_links > div {
   position: relative;
@@ -816,13 +796,12 @@
 .re_footer .site_links ul {
   display: none;
   position: absolute;
-  bottom: 45px;
+  bottom: 27px;
   left: -1px;
   width: 174px;
   border: 1px solid #3e3e3e;
   background-color: #e2e2e2;
 }
-
 .re_footer .site_links ul li {
   border-top: 1px solid #ccc;
 }
@@ -839,8 +818,41 @@
   font-weight: 500;
   line-height: 27px;
 }
-
-
+  /* sns */
+.re_footer .ft_sns {
+  display: flex;
+  color: #fff;
+}
+.re_footer .ft_sns .facebook,
+.re_footer .ft_sns .blog {
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.re_footer .ft_sns .facebook {
+  margin-left: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.51 23.51'%3E%3Cpath d='M23.51 11.76c0 6.49-5.26 11.76-11.76 11.76S0 18.25 0 11.76 5.26 0 11.76 0s11.76 5.26 11.76 11.76Z' style='fill:%233b5a9a'/%3E%3Cpath d='M14.33 5.21v2.38h-1.3c-.39 0-.63.11-.75.32-.09.14-.12.39-.12.72v1.09h2.21l-.26 2.4h-1.94v6.92H9.31v-6.92h-1.4v-2.4h1.4V8.28c0-1.47.51-2.42 1.51-2.82.49-.19.91-.25 1.35-.25h2.17Z' style='fill:%23f7f8f8'/%3E%3C/svg%3E");
+}
+.re_footer .ft_sns .blog {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.51 23.51'%3E%3Cpath d='M23.51 11.76c0 6.49-5.26 11.76-11.76 11.76S0 18.25 0 11.76 5.26 0 11.76 0s11.76 5.26 11.76 11.76Z' style='fill:%2342b649'/%3E%3Cpath d='M7.39 5.46h4.66c.84 0 1.55.13 2.13.38.58.25 1.02.61 1.31 1.06s.44.98.43 1.57c0 .66-.19 1.21-.57 1.65-.39.43-.9.72-1.53.86v.11c.45.02.87.15 1.26.39.39.24.71.57.95.99.24.42.36.91.36 1.47 0 .63-.16 1.19-.47 1.67-.31.48-.77.87-1.38 1.14-.61.28-1.34.42-2.19.42H7.39V5.46Zm4.3 4.9c.34 0 .65-.05.92-.18a1.419 1.419 0 0 0 .86-1.33c0-.43-.15-.78-.45-1.03-.31-.26-.73-.39-1.28-.39H9.82v2.93h1.88Zm.18 4.8c.68 0 1.18-.12 1.52-.38.33-.26.5-.62.49-1.08 0-.33-.08-.62-.23-.87s-.38-.45-.67-.59c-.29-.14-.64-.21-1.03-.21H9.83v3.14h2.05Z' style='fill:%23fff'/%3E%3C/svg%3E");
+}
+/* third line */
+.re_footer .address {
+  color: #b3b3b3;
+}
+.re_footer .address p {
+  line-height: 1.2;
+}
+.re_footer .address p span {
+  margin: 0 12px;
+  color: #fff;
+}
+.re_footer .address p span:first-child {
+  margin-left: 0;
+}
 
 
 
@@ -958,6 +970,30 @@
 
 }
 
+@media screen and (max-width: 630px) {  
+  /* footer */
+  .re_footer .ft_first_line {
+    display: block;
+  }
+  .re_footer .ft_links {
+    width: 100%;
+  }
+  .re_footer .ft_logo {
+    display: block;
+    text-align: right;
+  }
+
+}
+@media screen and (max-width: 545px) {
+  .re_footer .ft_second_line {
+    display: block;
+  }
+  .re_footer .site_links {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   /* top header */
   .re_main {
@@ -996,6 +1032,13 @@
   }
   .re_header .total_search.on .search_inner {
     height: auto;
+  }
+  /* footer */
+  .re_footer .ft_links {
+    margin-bottom: 20px;
+  }
+  .re_footer .ft_logo {
+    text-align: left;
   }
   
 }

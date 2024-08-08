@@ -178,7 +178,15 @@
   font-size: 18px;
   line-height: 68px;
   color: #000;
+
 }
+
+@media (pointer: coarse){
+  .re_gnb_wrap .re_gnb > li > a{
+    pointer-events: none;
+  }
+}
+
 .re_gnb_wrap .re_gnb .re_gnb_depth01::before {
   content: '';
   display: block;

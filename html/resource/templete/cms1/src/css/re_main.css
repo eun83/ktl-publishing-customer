@@ -113,8 +113,8 @@
   width: 100%;
 }
 .re_main .visual .visual_slider {
-  /* display: flex;
-  gap: 15px; */
+  display: flex;
+  gap: 15px;
 }
 .re_main .visual .visual_content {
   width: 25%;
@@ -277,24 +277,24 @@
 
 
 
+.re_main .visual .slick-slide {
+  width: 350px;
+  margin-left: 15px;
+  transition: all .5s cubic-bezier(.59, .01, .43, 1);
+}
+.re_main .visual .slick-slide:first-child {
+  margin-left: 0;
+}
+.re_main .visual .slick-current {
+  width: 670px;
+  transition: all .5s cubic-bezier(.59, .01, .43, 1);
+}
+.re_main .visual .slick-current .visual_content {
+  width: 100%;
+  max-width: 670px;
+  transition: all .5s cubic-bezier(.59, .01, .43, 1);
+}
 /* 
-      .re_main .visual .slick-slide {
-        width: 350px;
-        margin-left: 15px;
-        transition: all .5s cubic-bezier(.59, .01, .43, 1);
-      }
-      .re_main .visual .slick-slide:first-child {
-        margin-left: 0;
-      }
-      .re_main .visual .slick-current {
-        width: 670px;
-        transition: all .5s cubic-bezier(.59, .01, .43, 1);
-      }
-      .re_main .visual .slick-current .visual_content {
-        width: 100%;
-        max-width: 670px;
-        transition: all .5s cubic-bezier(.59, .01, .43, 1);
-      }
 
  */
   /* 컨텐츠 별 설정 */
@@ -924,18 +924,15 @@
   .re_main .visual .visual_top {
     padding: 30px;
   }
-  
   .re_main .visual .visual_content > div ul {
     flex-wrap: wrap;
   }
   .re_main .visual .visual_content > div ul li {
     flex: 1 1 200px;
   }
-
   .re_main .visual .visual_content > div ul li a::after {
     right: 12px;
   }
-
   .visual .visual_issue h3 {
     font-size: 16px;
   }
@@ -984,5 +981,10 @@
     padding: 10px 30px;
   }
 
-  
+  .re_main .notice_list {
+    flex-direction: column;
+  }
+  .re_main .notice_list li {
+    width: 100%;
+  }
 }

@@ -2,23 +2,24 @@ $(document).ready(function () {
     
     
 //css 테스트 하느라 넣어둔거
-    const menuItems = document.querySelectorAll('.visual_slider > .visual_content');
+    // const menuItems = document.querySelectorAll('.visual_slider > .visual_content');
 
-    menuItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.classList.add('on');
-        });
+    // menuItems.forEach(item => {
+    //     item.addEventListener('mouseenter', function() {
+    //         this.classList.add('on');
+    //     });
 
-        item.addEventListener('mouseleave', function() {
-            this.classList.remove('on');
-        });
+    //     item.addEventListener('mouseleave', function() {
+    //         this.classList.remove('on');
+    //     });
 
-        item.addEventListener('click', function() {
-            this.classList.add('on');
-        });
-    });
+    //     item.addEventListener('click', function() {
+    //         this.classList.add('on');
+    //     });
+    // });
 
-    // 비주얼 슬라이더
+    if($(window).width() <= 1440){
+        // 비주얼 슬라이더
     $('#slider_visual').slick({
         slide: 'div',		            // 슬라이드 되어야 할 태그 ex) div, li 
         infinite: true, 	          // 무한 반복 옵션	 
@@ -52,6 +53,9 @@ $(document).ready(function () {
             }
         ]
     });
+    }else{
+        
+    }
 
     // 알림창 슬라이더
     $('#slider-banner').slick({

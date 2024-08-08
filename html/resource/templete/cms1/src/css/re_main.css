@@ -626,8 +626,9 @@
 .re_main .re_main_contents {
   display: flex;
   justify-content: space-between;
-  padding: 0 80px;
-  gap: 35px;
+  padding-bottom: 15px;
+  overflow-x: scroll;
+  gap: 32px;
 }
 .re_main .re_main_contents li {
   text-align: center;

@@ -458,8 +458,10 @@
   width: 11px;
   height: 6px;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.59 6.54'%3E%3Cpath d='M10.84.75 5.79 5.79.75.75' data-name='Layer_1' style='fill:none;stroke:%23000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px'/%3E%3C/svg%3E");
   transition: .25s;
+}
+.allmenu_wrap .re_gnb .re_gnb_depth01 > li.expand > a::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.59 6.54'%3E%3Cpath d='M10.84.75 5.79 5.79.75.75' data-name='Layer_1' style='fill:none;stroke:%23000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px'/%3E%3C/svg%3E");
 }
 .allmenu_wrap .re_gnb .re_gnb_depth02 {
   padding: 15px 0;
@@ -513,7 +515,7 @@
 .allmenu_wrap .re_gnb .on .re_gnb_depth01 > li.on > a {
   color: #087ccf;
 }
-.allmenu_wrap .re_gnb .on .re_gnb_depth01 > li.on > a::after {  
+.allmenu_wrap .re_gnb .on .re_gnb_depth01 > li.expand.on > a::after {  
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.59 6.54'%3E%3Cpath d='M10.84.75 5.79 5.79.75.75' data-name='Layer_1' style='fill:none;stroke:%23087ccf;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px'/%3E%3C/svg%3E");
   transform: rotate(-180deg);
 }

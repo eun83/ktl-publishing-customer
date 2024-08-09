@@ -491,14 +491,13 @@ wcs_do();
 						<button type="button" class="btn_allmenu_close"><span class="hide">닫기</span></button>
 					</div>
 					<ul class="re_gnb">
-						<!-- 이하 li에 class="on" 들어감 -->
 						<li class="menu_01 on"> 
-							<a href="">사업소개</a>
+							<a href="#">사업소개</a>
 							<ul class="re_gnb_depth01">
 								<li class="on">
 									<a href="">인증</a>
 									<ul class="re_gnb_depth02">
-										<li class="on">
+										<li>
 											<a href="">국내인증</a>
 											<ul class="re_gnb_depth03">
 												<li><a href="">K마크인증</a></li>
@@ -1052,12 +1051,13 @@ wcs_do();
 										<div>
 											<legend>Serach</legend>
 											<div class="search_input">
-												<input type="search" id="sschStr" name="query" aria-label="검색어 입력" placeholder="검색어를 입력해주세요.">
+												<input type="search" id="sschStr" class="sschStr" name="query" aria-label="검색어 입력" placeholder="검색어를 입력해주세요.">
 												<label for="sschStr" class="hide">검색어를 입력해주세요.</label>
 											</div>
-											<button class="x_btn delete_term"><span class="hide">검색어삭제</span></button>
+											<button class="x_btn delete_term" empty_target=".sschStr"><span class="hide">검색어삭제</span></button>
 										</div>
-										<button type="submit" class="search_btn"><span class="hide">검색하기</span></button>
+										<!-- 활성화하려면 disabled 을 제거 -->
+										<button type="submit" class="search_btn" disabled><span class="hide">검색하기</span></button>
 									</div>
 								</fieldset>
 								<!-- //입력 폼 영역 -->

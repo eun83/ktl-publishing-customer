@@ -1,3 +1,7 @@
+function isMediaScreenMaxWidth(width) {
+    return window.matchMedia("(max-width: "+width+"px)").matches;
+}
+
 $(document).ready(function () {
     
     // web
@@ -9,11 +13,6 @@ $(document).ready(function () {
     $('.re_gnb_wrap > .wrap_inner > .re_gnb > li').mouseleave(function(){
         $('.re_gnb_wrap').removeClass('on');
     });
-
-
-
-
-
 
     const menuItems = document.querySelectorAll('.re_gnb_wrap > .wrap_inner > .re_gnb > li');
 
@@ -50,10 +49,18 @@ $(document).ready(function () {
         e.preventDefault();
         $('.total_search').removeClass('on');
     });
-    // 전체메뉴 테스트
+    
+    // gnb 목록 버튼
     $('.btn_allmenu_open').on('click', function() {
+        if(isMediaScreenMaxWidth(1240)){
+            const $me = $(this);
+            if($me.hasClass('actived')){
+                $me.removeClass('actived')
+            } else {
+                $me.addClass('actived')
+            }
+        } 
         $('.re_header > .re_allmenu').toggleClass('on');
-
     });
     $('.btn_allmenu_close').on('click',()=>{
         $('.re_header > .re_allmenu').removeClass('on');
@@ -77,8 +84,14 @@ $(document).ready(function () {
 
         // siblings 대상이 있는 경우 부모요소에 on을 넣거나 후속처리
         // - siblings: 형제 요소중에 대상이 있나 확인
-        let $target = $me.siblings('.re_gnb_depth01, .re_gnb_depth02, .re_gnb_depth03');
-        if($target.length > 0){
+        if($me.siblings('.re_gnb_depth01').length > 0){
+            // 최상단 메뉴는 접히지 않는다
+            const $parent = $me.parent();
+            if(!$parent.hasClass('on')){
+                $me.closest('ul').find('li.on').removeClass('on'); // 기존 메뉴 닫기
+                $parent.addClass('on');
+            }
+        } else if($me.siblings('.re_gnb_depth02, .re_gnb_depth03').length > 0){
             const $parent = $me.parent();
             if($parent.hasClass('on')){
                 $parent.removeClass('on');

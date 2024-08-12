@@ -58,7 +58,19 @@ $(document).ready(function () {
     }
 
     // 알림창 슬라이더
-    $('#slider-banner').slick({
+    $('#slider-banner').on('init', function(_event, slick){
+        slick.options.appendArrows.find('.stop').click(function(){
+          let $me = $(this);
+          if($me.hasClass('stop')){
+              $me.removeClass('stop').addClass('play');
+              slick.$slider.slick('slickPause'); // 슬라이더 중지
+          } else {
+              $me.removeClass('play').addClass('stop');
+              slick.$slider.slick('slickPlay'); // 슬라이더 시작
+          }
+          return false;
+        });
+    }).slick({
         slide: 'div',		            // 슬라이드 되어야 할 태그 ex) div, li 
         infinite: true, 	          // 무한 반복 옵션	 
         slidesToShow: 1,		        // 한 화면에 보여질 컨텐츠 개수
@@ -66,7 +78,10 @@ $(document).ready(function () {
         centerMode: true,
         centerPadding: '0px',
         speed: 500,	              // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
-        arrows: false, 		        // 옆으로 이동하는 화살표 표시 여부
+        arrows: true, 		        // 옆으로 이동하는 화살표 표시 여부
+        appendArrows: $('#slider-banner').siblings('.slider_dots'),
+        prevArrow: '<button class="prev "><span class="hide">이전</span></button>',
+        nextArrow: '<button class="next "><span class="hide">다음</span></button>',
         dots: false, 		            // 스크롤바 아래 점으로 페이지네이션 여부
         autoplay: true,			      // 자동 스크롤 사용 여부
         autoplaySpeed: 2500, 		  // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)

@@ -144,6 +144,7 @@
   line-height: 1.1;
   word-break: keep-all;
   opacity: .5;
+  transition: .5s;
 }
 .re_main .visual .visual_content > div p {
   font-weight: 500;
@@ -151,6 +152,13 @@
   line-height: 20px;
   word-break: keep-all;
   opacity: .5;
+  transition: .5s;
+}
+.re_main .visual .visual_content:last-child > div h3 {
+  opacity: .65;
+}
+.re_main .visual .visual_content:last-child > div p {
+  opacity: .65;
 }
 .re_main .visual .visual_content > div p span {
   display: block;
@@ -159,7 +167,8 @@
   display: block;
   margin-top: 35px;
   color: #fff;
-  opacity: .3;
+  opacity: .5;
+  transition: .5s;
 }
 .re_main .visual .visual_content > div .icon_plus::before {
   content: '';
@@ -182,7 +191,7 @@
   visibility: hidden;
   align-items: stretch;
   margin-top: 60px;
-  transition: all .1s cubic-bezier(.59, .01, .43, 1);
+  transition: .5s;
   opacity: 0;
   gap: 1px;
 }
@@ -237,7 +246,7 @@
 .re_main .visual .slider_03 > div .number {
   background: #63b2fc;
 }
-  /* visual card btn visible */
+  /* visual card visible_btn hover */
 .re_main .visual .visual_content > div ul li:active,
 .re_main .visual .visual_content > div ul li:hover {
   background-color: #121090;
@@ -260,7 +269,21 @@
 .re_main .visual .slick-current {
   width: 47.8%;
 }
-
+.re_main .visual .slick-current .visual_content > div h3 {
+  opacity: 1;
+}
+.re_main .visual .slick-current .visual_content > div p {
+  opacity: 1;
+}
+.re_main .visual .slick-current .visual_content > div .icon_plus {
+  visibility: hidden;
+  opacity: 0;
+}
+.re_main .visual .slick-current .visual_content > div ul {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: .35s;
+}
 
 /* slider_active */
 /* .re_main .visual .slick-current .visual_content > div {

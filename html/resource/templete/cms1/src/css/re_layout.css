@@ -438,11 +438,11 @@
 }
 .allmenu_wrap .re_gnb .re_gnb_depth01 > li > a {
   position: relative;
-  padding: 0 10px;
+  padding: 13px 10px;
   border-bottom: 1px solid #ced1d3;
   font-weight: 500;  
   font-size: 16px;
-  line-height: 50px;
+  line-height: 24px;
   color: #454545;
   transition: .25s;
 }
@@ -1032,7 +1032,7 @@
   }
   /* all menu */
   .re_allmenu .allmenu_wrap {
-    top: 119px;
+    top: 115px;
   }
   .allmenu_wrap .re_gnb {
     padding: 25px 10px;

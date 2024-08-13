@@ -919,6 +919,12 @@ s
     width: 100%;
     margin-top: 65px;
   }
+  .re_main .banner .banner_contnet > a {
+    height: auto;
+  }
+  .re_main .banner .banner_contnet > a img {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 995px) {
@@ -1003,15 +1009,15 @@ s
     margin-right: 5px;
   }
   .visual .visual_issue .issue_controller {
-    margin-left: 0;
+    margin-left: auto;
   }
-  .visual .visual_issue .issue_list {
-    width: calc(100% - 127px);
+  .visual .visual_issue .issue_slider {
+    width: calc(100% - 140px);
   }
-  .visual .visual_issue .issue_list li p {
+  .visual .visual_issue .issue_slider .issue_list div p {
     padding: 0 15px;
   }
-  .visual .visual_issue .issue_list li span {
+  .visual .visual_issue .issue_slider .issue_list div span {
     display: none;
   }
 
@@ -1026,28 +1032,13 @@ s
     flex-basis: 140px;
   }
 
-  .re_main .banner .banner_contnet > div {
-    height: auto;
-    padding: 55px 45px;
-  }
-  .re_main .banner .banner_contnet p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .re_main .banner .banner_contnet strong {
-    font-size: 25px;
-  }
-  .re_main .banner .banner_contnet a {
-    margin-top: 50px;
-    padding: 10px 30px;
-  }
-
   .re_main .notice_list {
     flex-direction: column;
   }
   .re_main .notice_list li {
     width: 100%;
   }
+  
 }
 @media screen and (max-width: 380px) {
   .re_main .visual .visual_content > div {

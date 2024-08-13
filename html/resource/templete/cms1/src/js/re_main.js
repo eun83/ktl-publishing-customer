@@ -80,9 +80,8 @@ $(document).ready(function () {
         prevArrow: "<button class='prev'><span class='hide'>이전</span></button>",
         nextArrow: "<button class='next'><span class='hide'>다음</span></button>",
         responsive: [{
-                breakpoint: 1239,
+                breakpoint: 480,
                 settings: {
-                    arrows: false,
             }
         }]
     });

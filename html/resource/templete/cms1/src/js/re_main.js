@@ -56,17 +56,11 @@ $(document).ready(function () {
         nextArrow: "<button class='next'><span class='hide'>다음</span></button>",
         responsive: [               // 반응형 웹 구현 옵션
             {
-                breakpoint: 1440,        // 화면 사이즈
+                breakpoint: 1280,        // 화면 사이즈
                 settings: {
                     slidesToShow: 1,        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
                     variableWidth: false,
-                }
-            },
-            {
-                breakpoint: 768,        // 화면 사이즈
-                settings: {
-                    slidesToShow: 1,        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                    variableWidth: false,
+                    infinite: true, 
                 }
             }
         ]

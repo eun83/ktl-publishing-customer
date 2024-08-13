@@ -112,6 +112,9 @@
 .re_main .visual .visual_slider_wrap {
   width: 100%;
 }
+.re_main .visual .visual_slider {
+  padding: 0 20px;
+}
 .re_main .visual .visual_content > div {
   position: relative;
   width: 100%;
@@ -823,6 +826,11 @@
 
   /* slider web 설정 */
 @media screen and (min-width: 1440px) {
+  .re_main .visual .visual_slider {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
   .re_main .visual .visual_slider .slick-track {
     display: flex;
     width: 100% !important;

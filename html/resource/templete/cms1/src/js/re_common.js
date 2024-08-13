@@ -82,21 +82,24 @@ $(document).ready(function () {
             return false;
         }
 
-        // siblings 대상이 있는 경우 부모요소에 on을 넣거나 후속처리
-        // - siblings: 형제 요소중에 대상이 있나 확인
         if($me.siblings('.re_gnb_depth01').length > 0){
-            // 최상단 메뉴는 접히지 않는다
             const $parent = $me.parent();
             if(!$parent.hasClass('on')){
-                $me.closest('ul').find('li.on').removeClass('on'); // 기존 메뉴 닫기
+                $me.closest('ul').find('li.on').removeClass('on');
+                const subMenu = $me.siblings('ul');
+                subMenu.hide();
                 $parent.addClass('on');
+                subMenu.fadeIn();
             }
         } else if($me.siblings('.re_gnb_depth02, .re_gnb_depth03').length > 0){
             const $parent = $me.parent();
             if($parent.hasClass('on')){
-                $parent.removeClass('on');
+                $me.siblings('ul').slideUp(function(){
+                    $parent.removeClass('on');
+                });
             } else {
-                $me.closest('ul').find('li.on').removeClass('on'); // 기존 메뉴 닫기
+                $me.closest('ul').find('li.on').removeClass('on').find('ul').slideUp();
+                $me.siblings('ul').slideDown();
                 $parent.addClass('on');
             }
         } else {

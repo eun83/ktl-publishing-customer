@@ -971,7 +971,7 @@
   }
   /* content */
   .re_main .link_customer li {
-    width: 300px;
+    width: 100%;
   }
   .re_main .link_customer li a {
     padding: 8px 0 8px 120px;

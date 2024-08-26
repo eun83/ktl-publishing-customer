@@ -661,6 +661,13 @@
   padding-bottom: 15px;
   gap: 32px;
 }
+.re_main_contents::-webkit-scrollbar {
+  height: 8px;
+}
+.re_main_contents::-webkit-scrollbar-thumb  {
+  background: rgba(194, 194, 194, 1);
+  border-radius: 8px;
+}
 .re_main .re_main_contents li {
   text-align: center;
   word-wrap: break-word;

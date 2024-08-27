@@ -30,28 +30,32 @@ $(document).ready(function () {
         });
     });
 
-    // search test 
+    // 검색 버튼
     $('.btn_top_search_open').on('click', function() {
+        $('.btn_allmenu_close').click();
         $('.total_search').addClass('on');
+        return false;
+    });
+
+    // 검색 닫기 버튼
+    $('#top-close-btn').on('click', function() {
+        $('.total_search').removeClass('on');
+        return false;
     });
     
     $('.delete_term').on('click', function(e){
         e.preventDefault();
-
         const $me = $(this);
         const emptyTarget = $me.attr('empty_target');
         if(emptyTarget && emptyTarget != ''){
             $(emptyTarget).val('').focus(); 
         }
     });
-
-    $('#top-close-btn').on('click', function(e) {
-        e.preventDefault();
-        $('.total_search').removeClass('on');
-    });
     
     // gnb 목록 버튼
     $('.btn_allmenu_open').on('click', function() {
+        $('#top-close-btn').click();
+
         if(isMediaScreenMaxWidth(1240)){
             const $me = $(this);
             if($me.hasClass('actived')){
@@ -62,7 +66,7 @@ $(document).ready(function () {
         } 
         $('.re_header > .re_allmenu').toggleClass('on');
     });
-    $('.btn_allmenu_close').on('click',()=>{
+    $('.btn_allmenu_close').on('click', ()=>{
         $('.re_header > .re_allmenu').removeClass('on');
     })
 

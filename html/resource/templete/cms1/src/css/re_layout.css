@@ -890,7 +890,7 @@
   /* top header */
   .re_main,
   .container {
-    margin-top: 126px;
+    margin-top: 122px;
   }
   .re_header .re_top-menu {
     position: relative;
@@ -974,11 +974,12 @@
   }
 }
 
-/* 기존 리셋 css 충돌 */
+/* 기존 미디어사이즈 css 조정 */
 @media screen and (max-width: 1239px) {
-  body, button, input, select, table, textarea {
-      font-size: 15px;
-      letter-spacing: -0.04em;
+  
+  /* all menu */
+  .re_allmenu .allmenu_wrap {
+    top: 126px;
   }
 }
 
@@ -1017,7 +1018,8 @@
 
 @media screen and (max-width: 480px) {
   /* top header */
-  .re_main {
+  .re_main,
+  .container {
     margin-top: 119px;
   }
   .re_header .top_logo {
@@ -1035,7 +1037,7 @@
   }
   /* all menu */
   .re_allmenu .allmenu_wrap {
-    top: 115px;
+    top: 119px;
   }
   .allmenu_wrap .re_gnb {
     padding: 25px 10px;

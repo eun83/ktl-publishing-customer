@@ -563,7 +563,7 @@
 .re_main .notice_list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px 20px;
 }
 .re_main .notice_list li {
   width: calc(50% - 10px);

@@ -56,7 +56,7 @@ $(document).ready(function () {
     $('.btn_allmenu_open').on('click', function() {
         $('#top-close-btn').click();
 
-        if(isMediaScreenMaxWidth(1240)){
+        if(isMediaScreenMaxWidth(1280)){
             const $me = $(this);
             if($me.hasClass('actived')){
                 $me.removeClass('actived')

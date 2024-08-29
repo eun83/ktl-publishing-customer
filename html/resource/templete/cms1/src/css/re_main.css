@@ -570,6 +570,7 @@
 }
 .re_main .notice_list li a {
   display: block;
+  position: relative;
   width: 100%;
   padding: 30px 20px 20px;
   border: 1px solid #e5e5e5;
@@ -592,6 +593,7 @@
 .re_main .notice_list li a strong {
   display: block;
   overflow: hidden;
+  width: calc(100% - 25px);
   margin-bottom: 35px;
   font-size: 17px;
   color: #000;
@@ -600,10 +602,12 @@
 }
 .re_main .notice_list .new_notice strong::after {
   content: 'N';
-  display: inline-block;
+  display: block;
+  position: absolute;
+  top: 31px;
+  right: 20px;
   width: 18px;
   height: 18px;
-  margin-left: 5px;
   border-radius: 50%;
   background-color: #fa9614;
   font-weight: 600;
